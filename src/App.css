@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "revicons";
+  fallback: fallback;
+  src: url("../src/fonts/revicons.woff") format('woff'), url("../src/fonts/revicons.ttf") format('ttf'), url("../src/fonts/revicons.eot") format('ttf');
+}
+
+.active {
+  color: #D6543F;
+}
+
+.resume-btn {
+  background: linear-gradient(132.82deg, #000518 26.9%, #DE4313 100%);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #f4f4f4 inset !important;
+}
+
+@media (max-width: 639px) {
+  .navbar {
+    animation-name: rightToLeft;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes rightToLeft {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0%);
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 991px) {
+  .navbar {
+    animation-name: rightToLeft;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes rightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .sendMessage {
+    width: 13rem;
+  }
+}
