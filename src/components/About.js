@@ -7,7 +7,7 @@ function About() {
     <div id="about" className="about container-fluid px-3 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-48 relative">
       <div className="flex flex-col space-y-4 md:space-y-10 pt-12">
         <div className="flex flex-col space-y-8">
-          <div className="w-full flex items-center text-ejs space-x-2 sm:space-x-4 md:space-x-6 text-3xl md:text-4xl lg:text-5xl font-bold font-nayanika pb-4 md:pb-8 border-b border-ejs">
+          <div className="w-full flex items-center text-ejs space-x-2 sm:space-x-4 md:space-x-6 text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat pb-4 md:pb-8 border-b border-christin-primary">
             <h1 className="font-montserrat font-bold text-christin">
               About me
               <span className="text-christin-secondary">.</span>
@@ -18,23 +18,16 @@ function About() {
           <span className="w-full md:w-7/12 text-md md:text-lg text-clip font-light letter-spacing-4">
             {data.map((item) => (
               <div key={item.id}>
-                <p className="text-christin-gray text-justify">
-                  {item.description.length > 521 ? `${item.description.substring(0, 521)}` : item.description}
-                  {readMore && (
+                {
+                  item.description.length > 521 && (
                     <p className="text-christin-gray text-justify">
-                      {item.description.substring(521, item.description.length)}
+                      {readMore ? item.description : `${item.description.substring(0, 521)}...`}
+                      <button type="button" onClick={() => setReadMore(!readMore)} className="text-christin-secondary font-light">
+                        {readMore ? 'Show less' : 'Read more'}
+                      </button>
                     </p>
-                  )}
-                </p>
-                {item.description.length > 521 ? (
-                  <button type="button" className="text-christin-secondary font-light" onClick={() => setReadMore(!readMore)}>
-                    {readMore ? 'Read Less' : 'Read More'}
-                  </button>
-                ) : (
-                  <button type="button" className="text-christin-secondary font-light" onClick={() => setReadMore(!readMore)}>
-                    {readMore ? 'Read More' : 'Read Less'}
-                  </button>
-                )}
+                  )
+                }
               </div>
             ))}
           </span>
