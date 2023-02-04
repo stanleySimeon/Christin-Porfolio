@@ -4,6 +4,8 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Activity from './components/Activity';
 import Accomplishments from './components/Accomplishments';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <Activity />
       <Projects />
       <Accomplishments />
+      <Contact />
+      <Footer />
     </div>
   );
 }

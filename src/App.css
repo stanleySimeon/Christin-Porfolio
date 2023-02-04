@@ -69,9 +69,12 @@ input:-webkit-autofill:active {
   background: linear-gradient(133.76deg, #DE4313 22.4%, #DE4313 36.88%, #FEC163 100%);
 }
 
-#accomplishments {
-  background: linear-gradient(135deg, #062547 0%, rgba(0, 234, 255, 0.08) 45.16%);
+@media(min-width: 640px) {
+  #accomplishments {
+    background: linear-gradient(135deg, #062547 0%, rgba(0, 234, 255, 0.08) 45.16%);
+  }
 }
+
 .react-multi-carousel-list {
   display: flex;
   align-items: center;
