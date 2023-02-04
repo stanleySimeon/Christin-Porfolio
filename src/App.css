@@ -69,6 +69,163 @@ input:-webkit-autofill:active {
   background: linear-gradient(133.76deg, #DE4313 22.4%, #DE4313 36.88%, #FEC163 100%);
 }
 
+.react-multi-carousel-list {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.react-multi-carousel-track {
+  list-style: none;
+  padding: 0 0 40px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform, transition;
+}
+
+.react-multiple-carousel__arrow {
+  position: absolute;
+  top: 17%;
+  outline: 0;
+  transition: all 0.5s;
+  border-radius: 35px;
+  z-index: 100;
+  border: 0;
+  min-width: 30px;
+  min-height: 30px;
+  cursor: pointer;
+  background-color: #000518;
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .react-multiple-carousel__arrow {
+    top: 20% !important;
+    min-width: 40px;
+    min-height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .react-multiple-carousel__arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.react-multiple-carousel__arrow::before {
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  font-family: 'revicons';
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.react-multiple-carousel__arrow:disabled {
+  cursor: default;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.react-multiple-carousel__arrow--left {
+  left: calc(4% + 1px);
+}
+
+.react-multiple-carousel__arrow--left::before {
+  content: "\e824";
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(4% + 1px);
+}
+
+.react-multiple-carousel__arrow--right::before {
+  content: "\e825";
+}
+
+.react-multi-carousel-dot-list {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.react-multi-carousel-dot button {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  opacity: 1;
+  box-shadow: none;
+  background: rgb(177, 176, 176);
+  transition: background 0.5s;
+  padding: 0;
+  margin: 0;
+  margin-right: 6px;
+  outline: 0;
+  cursor: pointer;
+}
+
+.react-multi-carousel-dot--active button {
+  background: #DE4313;
+}
+
+.react-multi-carousel-dot button:hover:active {
+  background: #05396d;
+}
+
+.react-multi-carousel-item {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  right: 0;
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .react-multi-carousel-item {
+    flex-shrink: 0 !important;
+  }
+
+  .react-multi-carousel-track {
+    overflow: visible !important;
+  }
+}
+
+[dir='rtl'].react-multi-carousel-list {
+  direction: rtl;
+}
+
+.rtl.react-multiple-carousel__arrow--right {
+  right: auto;
+  left: calc(3% + 1px);
+}
+
+.rtl.react-multiple-carousel__arrow--right::before {
+  content: "\e824";
+}
+
+.rtl.react-multiple-carousel__arrow--left {
+  left: auto;
+  right: calc(4% + 1px);
+}
+
+.rtl.react-multiple-carousel__arrow--left::before {
+  content: "\e825";
+}
+
 @media (min-width: 992px) {
   .sendMessage {
     width: 13rem;

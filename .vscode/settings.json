@@ -6,6 +6,7 @@
         "fontawesome",
         "fortawesome",
         "noreferrer",
-        "STIN"
+        "STIN",
+        "swipeable"
     ]
 }
