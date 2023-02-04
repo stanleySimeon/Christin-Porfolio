@@ -54,16 +54,16 @@ function Navigation() {
   };
 
   return (
-    <nav id="navigation" className="w-full h-12 md:h-20 flex justify-between items-center fixed py-8 px-3 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-48 md:bg-christin-white z-50">
+    <nav id="navigation" className="w-full h-12 md:h-20 flex justify-between items-center fixed py-2 sm:py-8 px-3 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-48 bg-christin-secondary md:bg-christin-white z-50">
       <span className="flex cursor-pointer user-select-none">
         <Link to="home" spy smooth duration={150} offset={-70} onClick={() => handleClick('home')} className="">
-          <span className="text-christin text-2xl font-bold">
+          <span className="text-christin text-xl sm:text-2xl font-bold">
             CHRI
             <span className="text-christin-white md:text-christin-secondary">STIN</span>
           </span>
         </Link>
       </span>
-      <FontAwesomeIcon icon={faBars} className="md:hidden text-3xl text-christin-white rounded-none" id="toggle-button" onClick={toggleMenu} />
+      <FontAwesomeIcon icon={faBars} className="md:hidden text-2xl text-christin-white rounded-none" id="toggle-button" onClick={toggleMenu} />
       <ul className="navbar w-full sm:w-1/2 hidden md:flex absolute top-0 left-0 md:left-0 right-0 sm:left-1/2 sm:right-0 px-3 sm:px-8 md:px-0 h-screen md:h-auto md:relative md:w-auto text-christin-white md:text-christin bg-christin bg-opacity-95 md:bg-transparent" id="menu">
         <span className="flex flex-col justify-center items-center pb-6 mt-4 md:hidden sm:border-none border-b border-christin-white">
           <span className="w-full flex justify-end items-center">
@@ -149,9 +149,6 @@ function Navigation() {
               GET MY RESUME
             </a>
           </li>
-        </span>
-        <span className="w-full absolute left-0 bottom-8 right-0 mx-auto md:hidden text-ejs-gray font-thin font-montserrat text-xs text-center">
-          &copy; Copyright 2023 Christin - All Rights Reserved.
         </span>
       </ul>
     </nav>

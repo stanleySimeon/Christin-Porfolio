@@ -1,5 +1,5 @@
 import React from 'react';
-import young from '../assets/images/handsome-young-businessman-suit-removebg-preview.png';
+import young from '../assets/images/handsome-young-businessman-suit.png';
 
 const Home = () => (
   <div id="home" className="container-fluid px-3 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-48 relative">
