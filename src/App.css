@@ -12,6 +12,12 @@
   background: linear-gradient(132.82deg, #000518 26.9%, #DE4313 100%);
 }
 
+@media(min-width: 768px) and (max-width: 919px) {
+  .resume-btn {
+    display: none;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -41,7 +47,7 @@ input:-webkit-autofill:active {
   }
 }
 
-@media (min-width: 640px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 767) {
   .navbar {
     animation-name: rightToLeft;
     animation-duration: 0.5s;
@@ -57,6 +63,10 @@ input:-webkit-autofill:active {
       transform: translateX(0%);
     }
   }
+}
+
+#home {
+  background: linear-gradient(133.76deg, #DE4313 22.4%, #DE4313 36.88%, #FEC163 100%);
 }
 
 @media (min-width: 992px) {

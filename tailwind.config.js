@@ -13,7 +13,7 @@ module.exports = {
         christin: {
           DEFAULT: '#000518',
           primary: '#00D2EE',
-          secondary: '#D6543F',
+          secondary: '#DE4313',
           hover: '#0595A8',
           gray: '#56585E',
           grayLight: '#F4F4F4',
