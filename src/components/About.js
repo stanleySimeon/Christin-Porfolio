@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React from 'react';
 import data from './Data';
 
@@ -11,7 +10,6 @@ function About() {
           <div className="w-full flex items-center text-ejs space-x-2 sm:space-x-4 md:space-x-6 text-3xl md:text-4xl lg:text-5xl font-bold font-nayanika pb-4 md:pb-8 border-b border-ejs">
             <h1 className="font-montserrat font-bold text-christin">
               About me
-              {' '}
               <span className="text-christin-secondary">.</span>
             </h1>
           </div>
