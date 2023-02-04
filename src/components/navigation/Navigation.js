@@ -116,19 +116,6 @@ function Navigation() {
           </li>
           <li>
             <Link
-              to="accomplishments"
-              spy
-              smooth
-              offset={-70}
-              duration={150}
-              onClick={() => handleClick('services')}
-              className={active === 'services' ? 'active' : ''}
-            >
-              ACCOMPLISHMENTS
-            </Link>
-          </li>
-          <li>
-            <Link
               to="contacts"
               spy
               smooth

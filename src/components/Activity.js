@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React from 'react';
 import { activities } from './Data';
 
@@ -21,7 +20,7 @@ function Activity() {
     <div id="activities" className="bg-christin-grayLight mt-1 activities container-fluid px-3 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-48 relative">
       <div className="flex flex-col space-y-4 pb-8 md:pb-12 md:space-y-10 pt-12">
         <div className="flex flex-col space-y-8">
-          <div className="w-full flex items-center text-ejs space-x-2 sm:space-x-4 md:space-x-6 text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat pb-4 md:pb-8 border-b border-christin-primary">
+          <div className="w-full flex items-center space-x-2 sm:space-x-4 md:space-x-6 text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat pb-4 md:pb-8 border-b border-christin-primary">
             <h1 className="font-montserrat font-bold text-christin">
               Activities
               <span className="text-christin-secondary">.</span>
